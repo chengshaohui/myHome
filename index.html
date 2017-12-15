@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>game</title>
+	<style>
+		body {
+			margin: 0;
+			font: 600 16px '微软雅黑';
+			width: 100%;
+			height: 100%;
+			background: #c89bd2;
+		}
+		.wrapper {
+			outline: 2px solid rgba(255,255,255,.4);
+			width: 920px;
+			height: 600px;
+			margin: 0 auto;
+			position: relative;
+			background: url(././A_Z/bg.png) no-repeat center;
+			background-size: cover;
+		}
+		.box {
+			width: 100%;
+			height: 100%;
+		}
+		.box img {
+			position: absolute;
+			width: 53px;
+			height: 77px;
+			display: block;
+		}
+		.top {
+			position: absolute;
+			z-index: 10;
+			top: 0;
+			left: 0;
+			height: 50px;
+			line-height: 50px;
+			width: 100%;
+			background: rgba(255, 255, 255, .5);
+		}
+		.start {
+			display: inline-block;
+			width: 80px;
+			text-align: center;
+			height: 30px;
+			line-height: 30px;
+			background: #990099;
+			position: absolute;
+			top: 10px;
+			left: 30px;
+			color: #fff;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+		.live {
+			position: absolute;
+			left: 150px;
+			top: 0;
+			height: 100%;
+			line-height: 50px;
+			color: #990099;
+		}
+		.live-val {
+			border-radius: 6px;
+			border: 1px solid rgba(0,0,0,.4);
+			height: 10px;
+			background: #DAA520;
+			vertical-align: 2px;
+		}
+		.count-box {
+			position: absolute;
+			left: 430px;
+			top: 0;
+			line-height: 50px;
+			height: 100%;
+			color: #990099;
+		}
+		.gif {
+			position: absolute;
+			right: 30px;
+			top: 10px;
+		}
+		.gif img {
+			display: none;
+			width: 30px;
+			height: 30px;
+		}
+	</style>
+	<script src="./jquery.min.js"></script>
+	<script src="./game.js"></script>
+</head>
+<body>
+	
+	
+	
+	
+	<div class="wrapper">
+<!-- 		<div class="panel">
+			<div class="header">成绩单：</div>
+			<div class="grade">您的成绩为<span></span>分</div>
+			<div class="speed">您的输入速率为<span></span></div>
+			<div class="yes">确定</div>
+		</div> -->
+		<div class="top">
+			<div class="start">开始</div>
+			<div class="live">
+				<span>生命值：</span>
+				<progress class="live-val" value="1"></progress>
+			</div>
+			<div class="count-box">
+				分数：
+				<span class="count">0</span>
+			</div>
+			<div class="gif">
+				<img src="./A_Z/e103.gif" alt="">
+				<img src="./A_Z/e103.gif" alt="">
+				<img src="./A_Z/e103.gif" alt="">
+				<img src="./A_Z/e103.gif" alt="">
+				<img src="./A_Z/e103.gif" alt="">
+				<img src="./A_Z/e103.gif" alt="">
+				<img src="./A_Z/e103.gif" alt="">
+				<img src="./A_Z/e103.gif" alt="">
+				<img src="./A_Z/e103.gif" alt="">
+				<img src="./A_Z/e103.gif" alt="">
+			</div>
+		</div>
+<!-- 		<div class="time">时长：<span></span></div> -->
+		<div class="box"></div>
+	</div>
+</body>
+</html>
